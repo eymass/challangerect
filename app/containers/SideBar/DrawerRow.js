@@ -7,6 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 export class DrawerRow extends React.PureComponent {
   render() {
     const { row, classes } = this.props;
+      //TODO
     return (
       <ListItem>
         <ListItemIcon />

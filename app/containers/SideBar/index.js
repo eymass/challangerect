@@ -35,11 +35,8 @@ export class SideBar extends React.PureComponent {
   getMenuButtons = sideBarButtons => {
     const rows = [];
     if (sideBarButtons && sideBarButtons.map) {
-      sideBarButtons.map(row =>
-        rows.push(
-          <DrawerRow />,
-        ),
-      );
+      //TODO
+      sideBarButtons.map(row => rows.push());
     }
     return rows;
   };
