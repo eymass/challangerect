@@ -20,3 +20,5 @@ Password: redfire
 The project is developed in **Container Component** Design Pattern.
 
 You will have to complete the SideBar component.
+
+![](https://onextrapixel.com/wp-content/uploads/2016/04/reactjs-thumb.jpg)

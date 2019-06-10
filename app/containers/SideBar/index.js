@@ -25,14 +25,11 @@ import DrawerRow from './DrawerRow';
 export class SideBar extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      isOpen: true,
-    };
+    //TODO
   }
 
   toggleDrawer = () => {
-    const isOpenNew = !this.state.isOpen;
-    this.setState({ isOpen: isOpenNew });
+    //TODO
   };
 
   getMenuButtons = sideBarButtons => {
@@ -40,11 +37,7 @@ export class SideBar extends React.PureComponent {
     if (sideBarButtons && sideBarButtons.map) {
       sideBarButtons.map(row =>
         rows.push(
-          <DrawerRow
-            classes={this.props.classes}
-            row={row}
-            className={this.props.classes.drawerRow}
-          />,
+          <DrawerRow />,
         ),
       );
     }
@@ -57,34 +50,8 @@ export class SideBar extends React.PureComponent {
     return (
       <Fragment>
         <div className={this.props.classes.drawerRoot}>
-          <Drawer
-            variant="permanent"
-            open={this.state.isOpen}
-            className={
-              this.state.isOpen
-                ? this.props.classes.drawerOpen
-                : this.props.classes.drawerClosed
-            }
-            classes={{
-              paper: this.state.isOpen
-                ? this.props.classes.drawerOpen
-                : this.props.classes.drawerClosed,
-            }}
-          >
-            <div className={this.props.classes.buttonRoot}>
-              <div
-                className={this.props.classes.toggleButton}
-                onClick={this.toggleDrawer}
-              >
-                <ArrowBack
-                  style={{ color: '#fff' }}
-                  className={
-                    this.state.isOpen ? '' : this.props.classes.rotateButton
-                  }
-                />
-              </div>
-            </div>
-            <List>{menuButtons}</List>
+          <Drawer>
+            <List></List>
           </Drawer>
         </div>
       </Fragment>

@@ -8,9 +8,9 @@ export class DrawerRow extends React.PureComponent {
   render() {
     const { row, classes } = this.props;
     return (
-      <ListItem classes={{ root: classes.drawerRow }} button key={row.id}>
+      <ListItem>
         <ListItemIcon />
-        <ListItemText classes={{ primary: classes.drawerRow }} primary={row.label} />
+        <ListItemText />
       </ListItem>
     );
   }
