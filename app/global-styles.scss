@@ -1,0 +1,69 @@
+html
+{ font-family: 'Open Sans'; }
+
+body {
+  font-family: 'Open Sans' !important;
+  div, input, p, h1, h2 , h3, h4, h5, h6, button, span {
+    font-family: 'Open Sans' !important;
+  }
+  button {
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+  background-color: white;
+  overflow-y: auto;
+}
+
+a {
+  color: unset !important;
+  cursor: pointer !important;
+  text-decoration: unset !important;
+  outline: 0 !important;
+  &:focus {
+    color: unset !important;
+    cursor: pointer !important;
+    text-decoration: unset !important;
+    outline: 0 !important;
+  }
+  &:hover {
+    color: unset !important;
+    cursor: pointer !important;
+    text-decoration: unset !important;
+    outline: 0 !important;
+  }
+  &:active {
+    color: unset;
+    cursor: pointer;
+    text-decoration: unset !important;
+    outline: 0 !important;
+  }
+}
+
+div {
+  outline: unset !important;
+}
+
+ul:focus {
+  outline: unset !important;
+}
+
+.loginRoot {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.backgroundImage {
+  background-image: url('images/Login/pattern.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+input:focus {
+  outline-offset: unset !important;
+  outline: unset !important;
+}
+
+button:focus {
+  outline: unset !important;
+}
