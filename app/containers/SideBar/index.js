@@ -47,9 +47,6 @@ export class SideBar extends React.PureComponent {
     return (
       <Fragment>
         <div className={this.props.classes.drawerRoot}>
-          <Drawer>
-            <List></List>
-          </Drawer>
         </div>
       </Fragment>
     );
